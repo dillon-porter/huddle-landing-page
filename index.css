@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500;700&display=swap');
+:root {
+    /* Colours */
+    --violet: hsl(257, 40%, 49%);
+    --Softmagenta: hsl(300, 69%, 71%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--violet);
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mobile-img {
+    display: none;
+}
+
+.main {
+    max-width: 1320px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.wrapper {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 0;
+    margin: 0 2rem;
+}
+
+.nav img {
+    width: 190px;
+    padding-bottom: 20px;
+}
+
+.main-section {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.main-section-text h1 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.main-section-text p {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.main-section-text a {
+    display: inline-block;
+    background-color: #fff;
+    color: var(--violet);
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    padding: 13px 50px;
+    border-radius: 25px;
+    box-shadow: 0 8px 17px -8px rgba(0, 0, 0, .8);
+    transition: all .3 ease;
+}
+
+.main-section-text a:hover {
+    background-color: var(--Softmagenta);
+    color: white;
+}
+
+.social-icons {
+    text-align: right;
+}
+
+.social-icons a i {
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+}
+
+
+/* this means that the facebook icon will not have 2rem of a margin but the other social icons will.*/
+
+.social-icons a:not(:first-child) {
+    margin-left: 2rem;
+}
+
+.social-icons a i::after {
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    left: -15px;
+    bottom: -13px;
+}
+
+.social-icons a:nth-child(2) {
+    margin-left: 2.4rem;
+}
+
+.social-icons a i:hover {
+    color: var(--Softmagenta);
+}
+
+.social-icons a i:hover::after {
+    border-color: var(--Softmagenta);
+}
+
+@media screen and (max-width: 1440px) {
+    .main-section img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .main-section-text h1 {
+        font-size: 26px;
+    }
+    .social-icons {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .main-section-text a {
+        padding: 10px 70px;
+    }
+}
