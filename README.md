@@ -2,6 +2,8 @@
 
 ![Design preview for the Huddle landing page with single introductory section](./design/desktop-preview.jpg)
 
+- [Challange](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0)
+- [Solution]()
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
